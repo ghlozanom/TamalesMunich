@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>TamalesEnMunich</servlet-name>
+		<servlet-class>com.gabloz.tamalmunich.web.servlets.TamalesEnMunichServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TamalesEnMunich</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.gabloz.tamalmunich.web.servlets.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>CreateUser</servlet-name>
+		<servlet-class>com.gabloz.tamalmunich.web.servlets.CreateUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateUser</servlet-name>
+		<url-pattern>/createUser</url-pattern>
+	</servlet-mapping>		
+
+	<servlet>
+		<servlet-name>LogoutUser</servlet-name>
+		<servlet-class>com.gabloz.tamalmunich.web.servlets.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutUser</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>		
+		
+</web-app>
